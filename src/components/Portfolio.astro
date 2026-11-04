@@ -158,7 +158,7 @@ const counts = Object.fromEntries(groupKeys.map((g) => [g, g === 'all' ? list.le
               </div>
               {img && (
                 <img src={img} alt={`${p.title} — ${p.type[lang]}`} loading="lazy" decoding="async" width="1200" height="750"
-                  class="absolute inset-0 h-full w-full object-cover object-top" onerror="this.remove()" />
+                  class="shot-img absolute inset-0 h-full w-full object-cover object-top opacity-0 transition-opacity duration-500" data-shot={img} />
               )}
               <span class="chip absolute left-3 top-3 !bg-[rgba(7,15,30,.6)] !text-white !border-white/15 backdrop-blur">
                 {p.company ?? t.groups[p.group as keyof typeof t.groups]}
@@ -281,6 +281,19 @@ const counts = Object.fromEntries(groupKeys.map((g) => [g, g === 'all' ? list.le
       });
     })
   );
+
+  // Screenshots: hide the mShots "generating" placeholder and retry until the real capture is ready
+  document.querySelectorAll<HTMLImageElement>('img.shot-img').forEach((img) => {
+    let tries = 0;
+    const check = () => {
+      if (img.naturalWidth >= 800) { img.classList.remove('opacity-0'); return; }
+      if (++tries > 8) { img.remove(); return; }
+      setTimeout(() => { img.src = img.dataset.shot + '&r=' + tries; }, 4000);
+    };
+    img.addEventListener('load', check);
+    img.addEventListener('error', () => img.remove());
+    if (img.complete && img.naturalWidth) check();
+  });
 
   // Scroll reveal
   const els = document.querySelectorAll('.reveal');
