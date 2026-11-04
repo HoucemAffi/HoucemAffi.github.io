@@ -1,7 +1,8 @@
 ---
 import Icon from './Icon.astro';
+import TechStack from './TechStack.astro';
 import projects from '../data/projects.json';
-import { ui, experience, toolbox, links, type Lang } from '../i18n/ui';
+import { ui, experience, links, type Lang } from '../i18n/ui';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -27,6 +28,7 @@ const counts = Object.fromEntries(groupKeys.map((g) => [g, g === 'all' ? list.le
     <ul class="hidden items-center gap-1 text-sm font-medium md:flex">
       <li><a class="rounded-full px-3 py-2 muted hover:text-[var(--text)]" href="#work">{t.nav.work}</a></li>
       <li><a class="rounded-full px-3 py-2 muted hover:text-[var(--text)]" href="#expertise">{t.nav.expertise}</a></li>
+      <li><a class="rounded-full px-3 py-2 muted hover:text-[var(--text)]" href="#stack">{t.nav.stack}</a></li>
       <li><a class="rounded-full px-3 py-2 muted hover:text-[var(--text)]" href="#experience">{t.nav.experience}</a></li>
       <li><a class="rounded-full px-3 py-2 muted hover:text-[var(--text)]" href="#about">{t.nav.about}</a></li>
     </ul>
@@ -114,14 +116,9 @@ const counts = Object.fromEntries(groupKeys.map((g) => [g, g === 'all' ? list.le
       ))}
     </div>
 
-    <div class="marquee mt-6 overflow-hidden py-2" aria-label={t.stackTitle}>
-      <div class="marquee-track">
-        {[...toolbox, ...toolbox].map((tool, i) => (
-          <span class="chip !px-4 !py-2 !text-sm" aria-hidden={i >= toolbox.length ? 'true' : undefined}>{tool}</span>
-        ))}
-      </div>
-    </div>
-  </section>
+</section>
+
+  <TechStack lang={lang} eyebrow={t.nav.stack} title={t.stackTitle} lead={t.stackLead} />
 
   <!-- WORK -->
   <section id="work" class="pt-24">

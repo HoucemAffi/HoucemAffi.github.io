@@ -1,0 +1,46 @@
+---
+import { techGroups, resolveTool } from '../data/tech';
+import type { Lang } from '../i18n/ui';
+interface Props { lang: Lang; title: string; lead: string; eyebrow: string }
+const { lang, title, lead, eyebrow } = Astro.props;
+const glyphs = {
+  api: '<path d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5c0 1.1.9 2 2 2h1"/><path d="M16 21h1a2 2 0 0 0 2-2v-5c0-1.1.9-2 2-2a2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1"/>',
+  webhook: '<path d="M18 16.98h-5.99c-1.1 0-1.95.94-2.48 1.9A4 4 0 0 1 2 17c.01-.7.2-1.4.57-2"/><path d="m6 17 3.13-5.78c.53-.97.1-2.18-.5-3.1a4 4 0 1 1 6.89-4.06"/><path d="m12 6 3.13 5.73C15.66 12.7 16.9 13 18 13a4 4 0 0 1 0 8"/>',
+};
+const spans: Record<string, string> = { lang: 'md:col-span-2 lg:row-span-2 flex flex-col', cms: '', api: '', devops: '', seo: '', design: '' };
+---
+<section id="stack" class="pt-24">
+  <div class="reveal mb-8 max-w-2xl">
+    <p class="eyebrow">{eyebrow}</p>
+    <h2 class="mt-2 text-3xl font-bold sm:text-4xl">{title}</h2>
+    <p class="muted mt-3 text-lg">{lead}</p>
+  </div>
+
+  <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+    {techGroups.map((g) => (
+      <div class={`glass reveal p-5 sm:p-6 ${spans[g.id]}`}>
+        <h3 class="mb-4 text-sm font-semibold uppercase tracking-wider muted">{g.title[lang]}</h3>
+        <ul class={`grid gap-3 ${g.id === 'lang' ? 'tech-lg flex-1 grid-cols-3 sm:grid-cols-5 lg:grid-cols-3' : 'grid-cols-3'}`}>
+          {g.tools.map((raw) => {
+            const t = resolveTool(raw);
+            return (
+              <li class="tech-tile" style={`--c:${t.glow}`}>
+                <span class="tech-icon" aria-hidden="true">
+                  <span class="tech-glow"></span>
+                  {t.path ? (
+                    <svg viewBox="0 0 24 24" class="relative h-7 w-7" style={t.adaptive ? 'fill: var(--text)' : `fill:${t.color}`}><path d={t.path} /></svg>
+                  ) : t.glyph ? (
+                    <svg viewBox="0 0 24 24" class="relative h-7 w-7" fill="none" stroke={t.color} stroke-width="2" stroke-linecap="round" stroke-linejoin="round" set:html={glyphs[t.glyph]} />
+                  ) : (
+                    <span class="tech-mono" style={`color:${t.color}; border-color:${t.color}`}>{t.mono}</span>
+                  )}
+                </span>
+                <span class="tech-name">{t.name}</span>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    ))}
+  </div>
+</section>
