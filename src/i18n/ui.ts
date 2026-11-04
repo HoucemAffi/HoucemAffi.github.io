@@ -1,0 +1,191 @@
+export type Lang = 'en' | 'fr';
+
+export const ui = {
+  en: {
+    metaTitle: 'Houcem AFI — Senior WordPress & Full Stack Developer',
+    metaDesc:
+      'Portfolio of Houcem AFI, Senior WordPress & Full Stack developer: custom WordPress, WooCommerce, API integrations, HubSpot, technical SEO and automation.',
+    nav: { work: 'Work', expertise: 'Expertise', experience: 'Experience', about: 'About', contact: 'Contact' },
+    skip: 'Skip to content',
+    themeToggle: 'Toggle light / dark theme',
+    langSwitch: 'Version française',
+    available: 'Open to freelance projects & new roles',
+    hello: "Hi, I'm Houcem",
+    role: 'Senior WordPress & Full Stack Developer',
+    pitch:
+      'I design, build and ship fast, secure, SEO-ready websites and web apps — from custom WordPress themes and WooCommerce stores to API integrations, HubSpot automation and multi-site infrastructure.',
+    ctaWork: 'See my work',
+    ctaContact: "Let's talk",
+    ctaCv: 'Download CV',
+    location: 'Tunis, Tunisia · Remote for Canada, Europe & worldwide',
+    stats: [
+      { value: '6+', label: 'years of experience' },
+      { value: '24', label: 'projects shipped' },
+      { value: '11', label: 'sites run from one dashboard' },
+      { value: '0', label: 'downtime on the Azure → Cloudways migration' },
+    ],
+    expertiseTitle: 'What I do',
+    expertiseLead: 'End-to-end ownership, from technical audit to production — with performance, security, SEO and tracking built in.',
+    expertise: [
+      { icon: 'code', title: 'Custom WordPress', text: 'Bespoke themes and plugins, custom Elementor components, headless & multilingual (Polylang).' },
+      { icon: 'cart', title: 'WooCommerce', text: 'Checkout funnels, product variations, payment integrations, Shopify → WooCommerce migrations.' },
+      { icon: 'plug', title: 'APIs & automation', text: 'REST APIs, webhooks, HubSpot CRM, forms and marketing workflows connected to your sites.' },
+      { icon: 'gauge', title: 'Technical SEO & performance', text: 'Core Web Vitals, JSON-LD structured data, GA4, GTM, Search Console and Microsoft Clarity.' },
+      { icon: 'server', title: 'DevOps & hosting', text: 'Cloudways, Azure, DNS, SSL, staging/production environments and Git deployments.' },
+      { icon: 'layers', title: 'Business apps', text: 'Dashboards, CRM/ERP, CMMS and internal tools that digitalise real business processes.' },
+    ],
+    workTitle: 'Selected work',
+    workLead: 'Projects delivered in-house, for clients and as a freelancer.',
+    filters: { all: 'All', metam: 'Metam', leadiya: 'Leadiya', freelance: 'Freelance', earlier: 'Before 2022' },
+    groups: { metam: 'Metam', leadiya: 'Leadiya', freelance: 'Freelance', earlier: 'Earlier' },
+    visit: 'Visit site',
+    privateProject: 'Private project · case study',
+    experienceTitle: 'Experience',
+    present: 'Present',
+    aboutTitle: 'About me',
+    about: [
+      "I'm a full stack developer and IT lead with more than six years of experience in digital transformation. I hold a Master's degree in Web Development & Front-End Engineering from ISAMM (Tunis).",
+      'Today at Metam, an international firm specialised in web, software and ERP solutions, I run client and internal projects end to end. Before that I led IT and a development team at Leadiya, digitalised industrial processes at Délice Holding, and built travel and enterprise platforms.',
+      'I also take on freelance projects: e-commerce stores, platform migrations and custom business applications.',
+    ],
+    educationTitle: 'Education',
+    education: [
+      { degree: "Master's in Web Development & Front-End Engineering", school: 'ISAMM — Institut Supérieur des Arts Multimédia de la Manouba', years: '2015 – 2018' },
+      { degree: 'Higher Technician in Multimedia & Web Development', school: 'ISET Sidi Bouzid', years: '2012 – 2015' },
+    ],
+    languagesTitle: 'Languages',
+    languages: 'Arabic (native) · French (fluent) · English (working proficiency)',
+    stackTitle: 'Toolbox',
+    contactTitle: 'Have a project in mind?',
+    contactLead: 'WordPress site, WooCommerce store, migration or custom web app — tell me about it and let’s see how I can help.',
+    email: 'Email me',
+    footer: 'Designed & built by Houcem AFI with Astro and Tailwind CSS.',
+  },
+  fr: {
+    metaTitle: 'Houcem AFI — Développeur Senior WordPress & Full Stack',
+    metaDesc:
+      'Portfolio de Houcem AFI, développeur Senior WordPress & Full Stack : WordPress sur mesure, WooCommerce, intégrations API, HubSpot, SEO technique et automatisation.',
+    nav: { work: 'Projets', expertise: 'Expertise', experience: 'Parcours', about: 'À propos', contact: 'Contact' },
+    skip: 'Aller au contenu',
+    themeToggle: 'Basculer thème clair / sombre',
+    langSwitch: 'English version',
+    available: 'Disponible pour missions freelance & nouveaux postes',
+    hello: 'Bonjour, je suis Houcem',
+    role: 'Développeur Senior WordPress & Full Stack',
+    pitch:
+      "Je conçois, développe et mets en production des sites et applications web rapides, sécurisés et optimisés SEO — des thèmes WordPress sur mesure et boutiques WooCommerce aux intégrations API, à l'automatisation HubSpot et à l'infrastructure multi-sites.",
+    ctaWork: 'Voir mes projets',
+    ctaContact: 'Discutons',
+    ctaCv: 'Télécharger le CV',
+    location: 'Tunis, Tunisie · À distance pour le Canada, l’Europe et l’international',
+    stats: [
+      { value: '6+', label: "années d'expérience" },
+      { value: '24', label: 'projets livrés' },
+      { value: '11', label: 'sites pilotés depuis un dashboard' },
+      { value: '0', label: 'interruption pendant la migration Azure → Cloudways' },
+    ],
+    expertiseTitle: 'Ce que je fais',
+    expertiseLead: "Un pilotage de bout en bout, de l'audit technique à la mise en production — performance, sécurité, SEO et tracking inclus.",
+    expertise: [
+      { icon: 'code', title: 'WordPress sur mesure', text: 'Thèmes et plugins sur mesure, composants Elementor personnalisés, headless et multilingue (Polylang).' },
+      { icon: 'cart', title: 'WooCommerce', text: 'Tunnels de commande, variations, intégrations de paiement, migrations Shopify → WooCommerce.' },
+      { icon: 'plug', title: 'API & automatisation', text: 'API REST, webhooks, CRM HubSpot, formulaires et workflows marketing reliés à vos sites.' },
+      { icon: 'gauge', title: 'SEO technique & performance', text: 'Core Web Vitals, données structurées JSON-LD, GA4, GTM, Search Console et Microsoft Clarity.' },
+      { icon: 'server', title: 'DevOps & hébergement', text: 'Cloudways, Azure, DNS, SSL, environnements staging/production et déploiements Git.' },
+      { icon: 'layers', title: 'Applications métier', text: 'Dashboards, CRM/ERP, GMAO et outils internes qui digitalisent de vrais processus métier.' },
+    ],
+    workTitle: 'Projets réalisés',
+    workLead: 'Des projets livrés en interne, pour des clients et en freelance.',
+    filters: { all: 'Tous', metam: 'Metam', leadiya: 'Leadiya', freelance: 'Freelance', earlier: 'Avant 2022' },
+    groups: { metam: 'Metam', leadiya: 'Leadiya', freelance: 'Freelance', earlier: 'Avant 2022' },
+    visit: 'Voir le site',
+    privateProject: 'Projet privé · étude de cas',
+    experienceTitle: 'Parcours',
+    present: 'Présent',
+    aboutTitle: 'À propos',
+    about: [
+      "Développeur full stack et responsable IT, j'ai plus de six ans d'expérience dans la transformation digitale. Je suis titulaire d'un Master en Développement Web et Ingénierie Front-End de l'ISAMM (Tunis).",
+      "Aujourd'hui chez Metam, cabinet international spécialisé en solutions web, logiciels et ERP, je pilote de bout en bout des projets clients et internes. Auparavant, j'ai dirigé l'IT et une équipe de développeurs chez Leadiya, digitalisé des processus industriels chez Délice Holding et développé des plateformes de voyage et d'entreprise.",
+      'Je réalise aussi des missions freelance : boutiques e-commerce, migrations de plateformes et applications métier sur mesure.',
+    ],
+    educationTitle: 'Formation',
+    education: [
+      { degree: 'Master en Développement Web et Ingénierie Front-End', school: 'ISAMM — Institut Supérieur des Arts Multimédia de la Manouba', years: '2015 – 2018' },
+      { degree: 'Technicien Supérieur en Multimédia et Développement Web', school: 'ISET de Sidi Bouzid', years: '2012 – 2015' },
+    ],
+    languagesTitle: 'Langues',
+    languages: 'Arabe (maternel) · Français (courant) · Anglais (intermédiaire)',
+    stackTitle: 'Boîte à outils',
+    contactTitle: 'Un projet en tête ?',
+    contactLead: 'Site WordPress, boutique WooCommerce, migration ou application sur mesure — parlez-m’en et voyons comment je peux vous aider.',
+    email: 'M’écrire',
+    footer: 'Conçu et développé par Houcem AFI avec Astro et Tailwind CSS.',
+  },
+} as const;
+
+export const experience = [
+  {
+    company: 'Metam',
+    years: { fr: 'Avr. 2026 – Présent', en: 'Apr 2026 – Present' },
+    place: { fr: 'Canada / Tunisie · Hybride', en: 'Canada / Tunisia · Hybrid' },
+    role: { fr: 'Développeur Senior WordPress & Full Stack', en: 'Senior WordPress & Full Stack Developer' },
+    text: {
+      fr: 'Développement sur mesure, e-commerce WooCommerce, intégrations HubSpot, SEO technique, migration Azure → Cloudways et dashboard LeadCenter.',
+      en: 'Custom development, WooCommerce e-commerce, HubSpot integrations, technical SEO, the Azure → Cloudways migration and the LeadCenter dashboard.',
+    },
+  },
+  {
+    company: 'Leadiya',
+    years: { fr: 'Avr. 2022 – Avr. 2026', en: 'Apr 2022 – Apr 2026' },
+    place: { fr: 'Tunis, Tunisie', en: 'Tunis, Tunisia' },
+    role: { fr: 'Développeur Full Stack – Responsable IT', en: 'Full Stack Developer – IT Lead' },
+    text: {
+      fr: "Pilotage des projets web, encadrement d'une équipe de développeurs, hébergement et sécurité, stratégie SEO et tracking.",
+      en: 'Led web projects and a team of developers; owned hosting, security, SEO strategy and tracking.',
+    },
+  },
+  {
+    company: 'Délice Holding',
+    years: { fr: 'Sept. 2020 – Avr. 2022', en: 'Sep 2020 – Apr 2022' },
+    place: { fr: 'Tunisie', en: 'Tunisia' },
+    role: { fr: 'Cadre Informatique – Développeur Back-End', en: 'IT Officer – Back-End Developer' },
+    text: {
+      fr: 'Digitalisation GMAO/DPAO, application DAD de signature électronique et outil GLPI Industrielle.',
+      en: 'CMMS digitalisation, the DAD e-signature application and the GLPI Industrielle tool.',
+    },
+  },
+  {
+    company: 'World Safari Travel',
+    years: { fr: 'Déc. 2019 – Août 2020', en: 'Dec 2019 – Aug 2020' },
+    place: { fr: 'Hammam Sousse, Tunisie', en: 'Hammam Sousse, Tunisia' },
+    role: { fr: 'Web Designer Senior', en: 'Senior Web Designer' },
+    text: {
+      fr: 'Sites de voyage responsive, back-ends WordPress, réservation et paiement en ligne.',
+      en: 'Responsive travel websites, WordPress back-ends, online booking and payment.',
+    },
+  },
+  {
+    company: 'Pegasio International',
+    years: { fr: 'Août 2018 – Févr. 2019', en: 'Aug 2018 – Feb 2019' },
+    place: { fr: 'Tunis, Tunisie', en: 'Tunis, Tunisia' },
+    role: { fr: 'Développeur Full Stack – Manager IT', en: 'Full Stack Developer – IT Manager' },
+    text: {
+      fr: 'Alfresco/COALA, systèmes internes AngularJS & Spring Boot, microservices et CRM.',
+      en: 'Alfresco/COALA, internal AngularJS & Spring Boot systems, microservices and CRM.',
+    },
+  },
+];
+
+export const toolbox = [
+  'WordPress', 'WooCommerce', 'Elementor', 'Polylang', 'PHP', 'JavaScript', 'React', 'Next.js', 'AngularJS',
+  'HTML5 / CSS3', 'MySQL', 'REST API', 'Webhooks', 'HubSpot', 'Shopify', 'Git', 'Cloudways', 'Microsoft Azure',
+  'GA4', 'GTM', 'Search Console', 'Microsoft Clarity', 'Google Ads', 'JSON-LD', 'Photoshop', 'Illustrator',
+  'Premiere Pro', 'After Effects',
+];
+
+export const links = {
+  email: 'affihoucem0@gmail.com',
+  linkedin: 'https://www.linkedin.com/in/houcem-afi-103aa711a/',
+  github: 'https://github.com/HoucemAffi',
+  cv: '/CV-Houcem-AFI.pdf',
+};
