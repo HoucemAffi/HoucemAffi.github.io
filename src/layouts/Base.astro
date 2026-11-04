@@ -1,0 +1,68 @@
+---
+import '../styles/global.css';
+import { ui, type Lang } from '../i18n/ui';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = ui[lang];
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const enUrl = `${site}/`;
+const frUrl = `${site}/fr/`;
+const canonical = lang === 'fr' ? frUrl : enUrl;
+const ogImage = `${site}/images/og-${lang}.jpg`;
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Houcem AFI',
+  jobTitle: t.role,
+  url: canonical,
+  image: `${site}/images/houcem-avatar.webp`,
+  email: 'mailto:affihoucem0@gmail.com',
+  address: { '@type': 'PostalAddress', addressLocality: 'Tunis', addressCountry: 'TN' },
+  sameAs: ['https://www.linkedin.com/in/houcem-afi-103aa711a/', 'https://github.com/HoucemAffi'],
+  knowsAbout: ['WordPress', 'WooCommerce', 'PHP', 'JavaScript', 'HubSpot', 'Technical SEO', 'REST API'],
+};
+---
+<!doctype html>
+<html lang={lang} class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{t.metaTitle}</title>
+    <meta name="description" content={t.metaDesc} />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="en" href={enUrl} />
+    <link rel="alternate" hreflang="fr" href={frUrl} />
+    <link rel="alternate" hreflang="x-default" href={enUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={t.metaTitle} />
+    <meta property="og:description" content={t.metaDesc} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content={lang === 'fr' ? 'fr_FR' : 'en_US'} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#070f1e" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="preload" as="image" href="/images/houcem-hero.webp" />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    <script is:inline>
+      (function () {
+        var d = document.documentElement;
+        d.classList.remove('no-js');
+        var t = null;
+        try { t = localStorage.getItem('theme'); } catch (e) {}
+        var dark = t ? t === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (dark) d.classList.add('dark');
+      })();
+    </script>
+  </head>
+  <body class="min-h-screen">
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 btn btn-primary">{t.skip}</a>
+    <div class="orbs" aria-hidden="true"></div>
+    <div class="grid-bg" aria-hidden="true"></div>
+    <slot />
+  </body>
+</html>
