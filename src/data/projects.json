@@ -1,0 +1,316 @@
+[
+  {
+    "id": "metam",
+    "title": "Metam",
+    "url": "https://metam.tech",
+    "group": "metam",
+    "year": "2026",
+    "featured": true,
+    "type": { "fr": "Site corporate multilingue", "en": "Multilingual corporate website" },
+    "desc": {
+      "fr": "Site du groupe Metam (solutions web, logiciels et ERP) : développement WordPress sur mesure, composants Elementor, multilingue Polylang, SEO technique et tracking GA4/GTM.",
+      "en": "Website of the Metam group (web, software and ERP solutions): custom WordPress development, Elementor components, Polylang multilingual setup, technical SEO and GA4/GTM tracking."
+    },
+    "stack": ["WordPress", "Elementor", "Polylang", "GA4", "GTM"]
+  },
+  {
+    "id": "operate",
+    "title": "operate.io",
+    "url": "https://operate.io",
+    "group": "metam",
+    "year": "2026",
+    "featured": true,
+    "type": { "fr": "Refonte de la page d'accueil", "en": "Homepage redesign" },
+    "desc": {
+      "fr": "Refonte complète de la page d'accueil WordPress : nouvelle structure, composants sur mesure, performance et intégration HubSpot.",
+      "en": "Full WordPress homepage redesign: new structure, custom components, performance work and HubSpot integration."
+    },
+    "stack": ["WordPress", "Elementor", "HubSpot", "Core Web Vitals"]
+  },
+  {
+    "id": "engy",
+    "title": "Engy",
+    "url": "https://heyengy.ai",
+    "group": "metam",
+    "year": "2026",
+    "type": { "fr": "Site produit IA", "en": "AI product website" },
+    "desc": {
+      "fr": "Site vitrine du produit Engy : intégration, optimisation des performances, SEO et suivi analytique.",
+      "en": "Marketing site for the Engy product: build, performance optimisation, SEO and analytics tracking."
+    },
+    "stack": ["WordPress", "SEO", "GA4"]
+  },
+  {
+    "id": "erp-recovery",
+    "title": "ERP Recovery",
+    "group": "metam",
+    "year": "2026",
+    "type": { "fr": "Landing page d'acquisition", "en": "Lead-generation landing page" },
+    "desc": {
+      "fr": "Landing page « ERP Implementation Recovery » codée à la main, avec formulaire HubSpot et suivi des conversions Google Ads.",
+      "en": "Hand-coded “ERP Implementation Recovery” landing page with a HubSpot form and Google Ads conversion tracking."
+    },
+    "stack": ["HTML", "CSS", "JavaScript", "HubSpot", "Google Ads"]
+  },
+  {
+    "id": "leadcenter",
+    "title": "LeadCenter",
+    "group": "metam",
+    "year": "2026",
+    "featured": true,
+    "type": { "fr": "Dashboard d'administration", "en": "Admin dashboard" },
+    "desc": {
+      "fr": "Dashboard PHP/JS centralisant la gestion de 11 sites WordPress et de leurs bases de données : architecture « bridge » par site, CRUD, recherche, filtres, pagination et export CSV.",
+      "en": "PHP/JS dashboard that manages 11 WordPress sites and their databases from one place: per-site “bridge” architecture, CRUD, search, filters, pagination and CSV export."
+    },
+    "stack": ["PHP", "JavaScript", "MySQL", "REST"]
+  },
+  {
+    "id": "azure-cloudways",
+    "title": "Azure → Cloudways",
+    "group": "metam",
+    "year": "2026",
+    "type": { "fr": "Migration d'infrastructure", "en": "Infrastructure migration" },
+    "desc": {
+      "fr": "Pilotage de la migration multi-sites d'Azure vers Cloudways, sans interruption de service : environnements staging/production, DNS, SSL et déploiements Git.",
+      "en": "Led a multi-site migration from Azure to Cloudways with zero downtime: staging/production environments, DNS, SSL and Git deployments."
+    },
+    "stack": ["Azure", "Cloudways", "DNS", "SSL", "Git"]
+  },
+
+  {
+    "id": "leadiya",
+    "title": "Leadiya",
+    "url": "https://leadiya.com",
+    "group": "leadiya",
+    "year": "2022–2026",
+    "featured": true,
+    "type": { "fr": "Site vitrine B2B", "en": "B2B corporate website" },
+    "desc": {
+      "fr": "Site vitrine orienté génération de leads B2B : stratégie SEO on-page, campagnes de backlinks et tracking GA4/GTM/Search Console.",
+      "en": "Corporate site built for B2B lead generation: on-page SEO strategy, backlink campaigns and GA4/GTM/Search Console tracking."
+    },
+    "stack": ["WordPress", "SEO", "GA4", "GTM"]
+  },
+  {
+    "id": "educalead",
+    "title": "EducaLead",
+    "url": "https://educalead.com",
+    "group": "leadiya",
+    "year": "2022–2026",
+    "type": { "fr": "Plateforme de leads formation", "en": "Training lead-gen platform" },
+    "desc": {
+      "fr": "Plateforme de captation de leads dans le secteur de la formation, avec formulaires optimisés pour la conversion.",
+      "en": "Lead-capture platform for the training sector, with conversion-optimised forms."
+    },
+    "stack": ["WordPress", "PHP", "MySQL"]
+  },
+  {
+    "id": "autos-pro",
+    "title": "Autos-Pro",
+    "url": "https://autos-pro.com",
+    "group": "leadiya",
+    "year": "2022–2026",
+    "type": { "fr": "Annonces automobiles", "en": "Car listings" },
+    "desc": {
+      "fr": "Site d'annonces automobiles avec module d'estimation en ligne.",
+      "en": "Car listings website with an online valuation tool."
+    },
+    "stack": ["WordPress", "PHP", "JavaScript"]
+  },
+  {
+    "id": "prodebouchage",
+    "title": "Pro Débouchage",
+    "url": "https://prodebouchage.fr",
+    "group": "leadiya",
+    "year": "2022–2026",
+    "type": { "fr": "Services d'urgence · SEO local", "en": "Emergency services · Local SEO" },
+    "desc": {
+      "fr": "Site de services d'urgence conçu pour le référencement local et la génération d'appels.",
+      "en": "Emergency-services site built for local SEO and inbound calls."
+    },
+    "stack": ["WordPress", "SEO local", "GA4"]
+  },
+  {
+    "id": "globalfashiondaily",
+    "title": "Global Fashion Daily",
+    "url": "https://globalfashiondaily.com",
+    "group": "leadiya",
+    "year": "2022–2026",
+    "type": { "fr": "E-commerce mode", "en": "Fashion e-commerce" },
+    "desc": {
+      "fr": "Boutique en ligne dédiée à la mode.",
+      "en": "Online store dedicated to fashion."
+    },
+    "stack": ["WordPress", "WooCommerce"]
+  },
+  {
+    "id": "labelminceur",
+    "title": "LabelMinceur",
+    "group": "leadiya",
+    "year": "2022–2026",
+    "type": { "fr": "Site de génération de leads", "en": "Lead-generation website" },
+    "desc": {
+      "fr": "Site de captation de leads du réseau Leadiya, géré depuis le dashboard LeadCenter.",
+      "en": "Lead-capture site in the Leadiya network, managed from the LeadCenter dashboard."
+    },
+    "stack": ["WordPress", "PHP", "MySQL"]
+  },
+  {
+    "id": "habitattransition",
+    "title": "HabitatTransition",
+    "group": "leadiya",
+    "year": "2022–2026",
+    "type": { "fr": "Site de génération de leads", "en": "Lead-generation website" },
+    "desc": {
+      "fr": "Site de captation de leads du réseau Leadiya, géré depuis le dashboard LeadCenter.",
+      "en": "Lead-capture site in the Leadiya network, managed from the LeadCenter dashboard."
+    },
+    "stack": ["WordPress", "PHP", "MySQL"]
+  },
+  {
+    "id": "jeuxgagnants",
+    "title": "JeuxGagnants",
+    "group": "leadiya",
+    "year": "2022–2026",
+    "type": { "fr": "Jeux-concours", "en": "Online contests" },
+    "desc": {
+      "fr": "Plateforme de jeux-concours et de leurs sous-répertoires de campagnes, avec collecte de leads.",
+      "en": "Online contest platform and its campaign sub-sites, with lead collection."
+    },
+    "stack": ["PHP", "MySQL", "JavaScript"]
+  },
+
+  {
+    "id": "electromenagers",
+    "title": "Électroménagers à Rabais",
+    "url": "https://electromenagersarabais.com",
+    "group": "freelance",
+    "year": "2026",
+    "featured": true,
+    "type": { "fr": "Migration Shopify → WooCommerce", "en": "Shopify → WooCommerce migration" },
+    "desc": {
+      "fr": "Migration d'une boutique Shopify vers WooCommerce (Canada) : audit, stratégie de conversion, comparatif de thèmes, chiffrage et développement PHP.",
+      "en": "Migration of a Shopify store to WooCommerce (Canada): audit, conversion strategy, theme comparison, estimate and PHP development."
+    },
+    "stack": ["WooCommerce", "Shopify", "PHP", "SEO"]
+  },
+  {
+    "id": "mm-electro",
+    "title": "M&M Électro",
+    "group": "freelance",
+    "year": "2026",
+    "type": { "fr": "Plateforme web + CRM/ERP", "en": "Web platform + CRM/ERP" },
+    "desc": {
+      "fr": "Plateforme web et CRM/ERP sur mesure pour la gestion des réparations d'électroménagers (Canada) : cahier des charges, cadrage et devis.",
+      "en": "Custom web platform and CRM/ERP for appliance repair management (Canada): specifications, scoping and quote."
+    },
+    "stack": ["PHP", "MySQL", "CRM", "ERP"]
+  },
+  {
+    "id": "monguideutile",
+    "title": "Nexus Amplify",
+    "url": "https://monguideutile.fr",
+    "group": "freelance",
+    "year": "2026",
+    "type": { "fr": "Application PHP de leads", "en": "PHP lead-gen app" },
+    "desc": {
+      "fr": "Application PHP de génération de leads avec jeu-concours FNAC et synchronisation API sponsor : validation des contraintes (âge, zone, domaines bloqués, plafond journalier) et journalisation.",
+      "en": "PHP lead-generation app with a FNAC contest and sponsor API sync: constraint validation (age, region, blocked domains, daily cap) and logging."
+    },
+    "stack": ["PHP", "MySQL", "REST API"]
+  },
+  {
+    "id": "vendredi",
+    "title": "Vendredi",
+    "url": "https://vendrediofficiel.com",
+    "group": "freelance",
+    "year": "2025",
+    "featured": true,
+    "type": { "fr": "E-commerce mode féminine", "en": "Women's fashion e-commerce" },
+    "desc": {
+      "fr": "Boutique WooCommerce de mode féminine : personnalisation des variations produits et pages légales (CGU, mentions légales, confidentialité, FAQ).",
+      "en": "WooCommerce women's fashion store: product variation customisation and legal pages (terms, legal notice, privacy, FAQ)."
+    },
+    "stack": ["WooCommerce", "WordPress", "HTML/CSS/JS"]
+  },
+  {
+    "id": "ayrahome",
+    "title": "AyraHome",
+    "url": "https://ayrahome.tn",
+    "group": "freelance",
+    "year": "2025",
+    "type": { "fr": "Site web & identité visuelle", "en": "Website & visual identity" },
+    "desc": {
+      "fr": "Site web de la marque AyraHome et création de son identité visuelle (logo).",
+      "en": "Website for the AyraHome brand and design of its visual identity (logo)."
+    },
+    "stack": ["WordPress", "Illustrator"]
+  },
+  {
+    "id": "lcateam",
+    "title": "LCA Team",
+    "url": "https://lcateam.com",
+    "group": "freelance",
+    "year": "2025",
+    "type": { "fr": "Site vitrine", "en": "Corporate website" },
+    "desc": {
+      "fr": "Site vitrine responsive, optimisé pour le SEO et les performances.",
+      "en": "Responsive corporate website, optimised for SEO and performance."
+    },
+    "stack": ["WordPress", "SEO"]
+  },
+
+  {
+    "id": "dad",
+    "title": "DAD",
+    "group": "earlier",
+    "company": "Délice Holding",
+    "year": "2020–2022",
+    "type": { "fr": "Application interne", "en": "Internal application" },
+    "desc": {
+      "fr": "Application de gestion et de signature électronique des dossiers d'investissement, qui a réduit considérablement les délais de traitement et de décision.",
+      "en": "Application for managing and e-signing investment files, which significantly reduced processing and decision times."
+    },
+    "stack": ["PHP", "MySQL", "JavaScript"]
+  },
+  {
+    "id": "glpi",
+    "title": "GLPI Industrielle",
+    "group": "earlier",
+    "company": "Délice Holding",
+    "year": "2020–2022",
+    "type": { "fr": "GMAO · maintenance", "en": "CMMS · maintenance" },
+    "desc": {
+      "fr": "Plateforme de gestion des interventions et de la maintenance industrielle, dans le cadre de la digitalisation de la GMAO.",
+      "en": "Platform for managing industrial maintenance and interventions, as part of the CMMS digitalisation."
+    },
+    "stack": ["GLPI", "PHP", "MySQL"]
+  },
+  {
+    "id": "worldsafari",
+    "title": "World Safari Travel",
+    "group": "earlier",
+    "company": "World Safari Travel",
+    "year": "2019–2020",
+    "type": { "fr": "Sites de voyage", "en": "Travel websites" },
+    "desc": {
+      "fr": "Sites de voyage responsive sur WordPress, avec réservation et paiement en ligne et un tunnel de vente optimisé.",
+      "en": "Responsive WordPress travel websites with online booking and payment and an optimised sales funnel."
+    },
+    "stack": ["WordPress", "HTML/CSS", "Paiement en ligne"]
+  },
+  {
+    "id": "pegasio",
+    "title": "Pegasio — SI interne",
+    "group": "earlier",
+    "company": "Pegasio International",
+    "year": "2018–2019",
+    "type": { "fr": "Systèmes internes", "en": "Internal systems" },
+    "desc": {
+      "fr": "Gestion documentaire Alfresco/COALA et développement de systèmes internes en microservices, avec contribution au CRM.",
+      "en": "Alfresco/COALA document management and internal microservice systems, plus contributions to the CRM."
+    },
+    "stack": ["AngularJS", "Spring Boot", "Alfresco", "MySQL"]
+  }
+]
